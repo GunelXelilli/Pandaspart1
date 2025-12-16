@@ -65,7 +65,7 @@ df.tail()      # Shows last 5 rows
 df.shape       # Returns (rows, columns)
 df.columns     # Displays column names
 df.info()      # General information about the DataFrame
-
+```
 🎯 What You Will Learn in This Part
 
 ✔ What Pandas is and why it is used
