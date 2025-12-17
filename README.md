@@ -1,8 +1,8 @@
-# 📊 Pandas – Part 1  
-## Introduction to DataFrame & Lists
+# 📊 Pandas & Car Data Projects
 
-This section is an **introduction to the Pandas library in Python**, focusing on  
-creating and working with **DataFrames using lists**.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
 
@@ -14,8 +14,6 @@ creating and working with **DataFrames using lists**.
 - Storing data in structured formats 🗂️  
 
 It is widely used in **data analysis, data science, and machine learning**.
-
----
 
 ## 🧱 Core Concepts
 
@@ -66,22 +64,79 @@ df.shape       # Returns (rows, columns)
 df.columns     # Displays column names
 df.info()      # General information about the DataFrame
 ```
-🎯 What You Will Learn in This Part
+## 🧩 Basics — DataFrames & Lists
 
-✔ What Pandas is and why it is used
-✔ Difference between Series and DataFrame
-✔ How to create DataFrames from lists
-✔ Basic methods to explore a DataFrame
+Check `PandasPart1.ipynb` for:
 
-🚀 Next Part (Part 2)
+- Creating DataFrames  
+- Exploring data with `.head()`, `.shape`, `.info()`, `.columns`  
 
-Reading CSV / Excel files
+---
 
-Column selection
+## 🚀 Data Cleaning & Filtering
 
-Filtering with conditions
+Check `PandasPart2.ipynb` for:
 
-📌 This README is designed for beginners learning Pandas.
-✨ Simple explanations with practical examples.
+- Cleaning text & numeric columns  
+- Adding new columns (like Currency)  
+- Removing duplicates  
+- Handling missing values in car datasets  
 
-Basic data analysis
+---
+
+## 🚗 Car Data Projects
+
+Worked on:
+
+* **Car Sales Dataset** — cleaned prices, removed duplicates  
+* **Car Dataset** — handled missing values, filtered data  
+
+Example:
+
+```python
+# Handling missing values
+df.isna().sum()  # Count missing
+df.dropna()      # Remove missing rows
+df.fillna(0)     # Fill missing values
+```
+
+---
+
+## 🎯 Topics Covered
+
+- ✅ DataFrames & Series  
+- ✅ Reading CSV / Excel files  
+- ✅ Filtering & selection  
+- ✅ Cleaning text & numeric data  
+- ✅ Removing duplicates  
+- ✅ Handling missing values  
+
+---
+
+## 📁 Repository Structure
+
+```
+/Pandas-Car-Projects
+│
+├── data/               # CSV / Excel datasets
+├── notebooks/
+│   ├── PandasPart1.ipynb  # Basics & DataFrames
+│   └── PandasPart2.ipynb  # Cleaning & Car Data
+├── README.md           # This file
+└── LICENSE             # MIT License
+```
+
+---
+
+## 💙 License
+
+This project is licensed under the **MIT License** — see `LICENSE` for details.  
+
+Happy Coding! 🐍
+
+
+
+
+---
+
+
